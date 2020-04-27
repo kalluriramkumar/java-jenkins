@@ -17,7 +17,7 @@ public class DemoClass_Test {
         assertEquals(expected_result, actual_result);
     }
 
-    /*@Test
+    @Test
     public void add_numbers_fail(){
 
         int expected_result = 10;
@@ -26,5 +26,5 @@ public class DemoClass_Test {
 
         assertEquals(expected_result, actual_result);
 
-    }*/
+    }
 }
