@@ -4,6 +4,6 @@ public class StringOperations {
 
     public String[] splitString(String str) {
 
-        return str.split(str);
+        return str.split(" ");
     }
 }
