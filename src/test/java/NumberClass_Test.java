@@ -1,10 +1,11 @@
+import calculation.NumberClass;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DemoClass_Test {
+public class NumberClass_Test {
 
-    DemoClass demoClass = new DemoClass();
+    NumberClass numberClass = new NumberClass();
 
 
     @Test
@@ -12,7 +13,7 @@ public class DemoClass_Test {
 
         int expected_result = 10;
 
-        int actual_result = demoClass.addNumbers(5, 5);
+        int actual_result = numberClass.addNumbers(5, 5);
 
         assertEquals(expected_result, actual_result);
     }
@@ -22,7 +23,7 @@ public class DemoClass_Test {
 
         int expected_result = 20;
 
-        int actual_result = demoClass.addNumbers(10, 10);
+        int actual_result = numberClass.addNumbers(10, 10);
 
         assertEquals(expected_result, actual_result);
 
