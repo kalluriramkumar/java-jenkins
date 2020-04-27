@@ -20,7 +20,7 @@ public class DemoClass_Test {
     @Test
     public void add_numbers_fail(){
 
-        int expected_result = 20;
+        int expected_result = 10;
 
         int actual_result = demoClass.addNumbers(10, 10);
 
