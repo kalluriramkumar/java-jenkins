@@ -34,7 +34,7 @@ public class NumberClass_Test {
 
         int expected_result = 20;
 
-        int actual_result = numberClass.multiplyNumbers(5, 4);
+        int actual_result = numberClass.multiplyNumbers(10, 2);
 
         assertEquals(expected_result, actual_result);
 
