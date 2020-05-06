@@ -32,9 +32,9 @@ public class NumberClass_Test {
     @Test
     public void multiply_numbers_test(){
 
-        int expected_result = 100;
+        int expected_result = 20;
 
-        int actual_result = numberClass.multiplyNumbers(10, 10);
+        int actual_result = numberClass.multiplyNumbers(10, 2);
 
         assertEquals(expected_result, actual_result);
 
