@@ -39,4 +39,15 @@ public class NumberClass_Test {
         assertEquals(expected_result, actual_result);
 
     }
+
+    @Test
+    public void divide_numbers_test(){
+
+        int expected_result = 20;
+
+        int actual_result = numberClass.divideNumbers(40, 2);
+
+        assertEquals(expected_result, actual_result);
+
+    }
 }
