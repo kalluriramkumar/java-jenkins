@@ -12,10 +12,13 @@ pipeline {
 
             // To run Maven on a Windows agent, use
             // bat "mvn -Dmaven.test.failure.ignore=true clean package"
-         }
+         }// steps
+      }//stage-build
       stage('Deploy') {
-            echo "Deploying"
-        } 
+         steps{
+                 echo "Deploying"
+         }//steps
+      } // stage-deploy
 
          post {
             // If Maven was able to run the tests, even if some of the test
@@ -23,8 +26,8 @@ pipeline {
             success {
                junit '**/target/surefire-reports/TEST-*.xml'
                archiveArtifacts 'target/*.jar'
-            }
-         }
+            }//SUccess
+         }//post
       }
    }
 }
