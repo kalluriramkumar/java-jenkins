@@ -28,4 +28,15 @@ public class NumberClass_Test {
         assertEquals(expected_result, actual_result);
 
     }
+
+    @Test
+    public void multiply_numbers_test(){
+
+        int expected_result = 100;
+
+        int actual_result = numberClass.multiplyNumbers(10, 10);
+
+        assertEquals(expected_result, actual_result);
+
+    }
 }
