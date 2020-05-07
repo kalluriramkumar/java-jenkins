@@ -14,7 +14,7 @@ pipeline {
       sortMode: 'ASCENDING_SMART',
       tagFilter: "*",
       type: 'PT_BRANCH_TAG',
-      useRepository: 'git@github.com:foo/bar.git')
+      useRepository: 'https://github.com/kalluriramkumar/java-jenkins.git')
    }     
 
 
