@@ -1,26 +1,12 @@
 pipeline {
     agent any
     
-    options {
-     parameters([
-        gitParameter(branch: '',
-                     branchFilter: 'origin/(.*)',
-                     defaultValue: 'master',
-                     description: '',
-                     name: 'BRANCH',
-                     quickFilterEnabled: false,
-                     selectedValue: 'NONE',
-                     sortMode: 'NONE',
-                     tagFilter: '*',
-                     type: 'PT_BRANCH')
-    ])
-   }
-    
     stages {
         stage('Build') { 
             steps {
                 echo "Building"
-                git branch: "${params.BRANCH}", url: 'https://github.com/kalluriramkumar/java-jenkins.git'
+                git branch: "env.GIT_BRANCH", url: 'https://github.com/kalluriramkumar/java-jenkins.git'
+                echo 'Pulling... ' + env.GIT_BRANCH
             }
         }
         stage('Test') { 
