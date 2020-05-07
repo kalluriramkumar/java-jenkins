@@ -9,6 +9,7 @@ pipeline {
             steps {
                 echo "Building"
                 git branch: "${params.BRANCH}", url: 'https://github.com/kalluriramkumar/java-jenkins.git'
+                echo "Branch : ${params.BRANCH}"
             }
         }
         stage('Test') { 
