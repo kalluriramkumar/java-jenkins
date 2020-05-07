@@ -1,7 +1,8 @@
 pipeline {
     agent any
     
-    parameters([
+    properties([
+     parameters([
         gitParameter(branch: '',
                      branchFilter: 'origin/(.*)',
                      defaultValue: 'master',
@@ -13,7 +14,7 @@ pipeline {
                      tagFilter: '*',
                      type: 'PT_BRANCH')
     ])
-   
+   ])
     
     stages {
         stage('Build') { 
