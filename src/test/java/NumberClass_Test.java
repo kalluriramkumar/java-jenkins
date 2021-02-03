@@ -41,19 +41,11 @@ public class NumberClass_Test {
     }
 
     @Test
-<<<<<<< HEAD
     public void divide_numbers_test(){
 
         int expected_result = 20;
 
         int actual_result = numberClass.divideNumbers(40, 2);
-=======
-    public void multiply_numbers_test_1(){
-
-        int expected_result = 30;
-
-        int actual_result = numberClass.multiplyNumbers(10, 3);
->>>>>>> master
 
         assertEquals(expected_result, actual_result);
 
