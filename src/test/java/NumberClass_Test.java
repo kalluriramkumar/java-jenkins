@@ -45,7 +45,7 @@ public class NumberClass_Test {
 
         int expected_result = 20;
 
-        int actual_result = numberClass.divideNumbers(40, 1);
+        int actual_result = numberClass.divideNumbers(40, 2);
 
         assertEquals(expected_result, actual_result);
 
